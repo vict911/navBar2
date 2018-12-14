@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Vict Chen (vict911@163.com)
+ * @date    2017-09-14
+ * @version navBar2.0.2
+ */
+/*统一样式*/
+*{
+    padding:0;
+    margin:0;
+    border:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -moz-tap-highlight-color:rgba(0,0,0,0);
+    -ms-tap-highlight-color:rgba(0,0,0,0);
+    -o-tap-highlight-color:rgba(0,0,0,0);
+    tap-highlight-color:rgba(0,0,0,0);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    }
+ul li{list-style:none;}
+a{text-decoration:none;}
+.navBarOut{width:200px;height:100%;overflow: hidden;position:fixed;top:0;left:0;z-index:999;}
+.navBar{width:217px;height:100%;background:#333743;font-size:14px;}
+.logo_area{width:100%;height:60px;display: block;background:#37414a;border-bottom:1px solid #606579;}
+.logo_area img{width:100%;height:100%;}
+ul.navBar_ul{overflow-y:scroll;}
+ul.navBar_ul>li{line-height:50px;background:#41485b;color:#fff;position:relative;}
+ul.navBar_ul>li a.first_nav_name{color:#fff;display:block;padding-left:50px;cursor:pointer;}
+
+ul.navBar_ul>li a.first_nav_name span{margin-right:6px;}
+.showMore{transition:all 0.1s;transform:rotate(-90deg);}
+.showMore.open{transform:rotate(0deg);}
+@media screen and (min-width: 750px){
+    ul.navBar_ul>li a.first_nav_name:hover{background-color:#454e64;}
+}
+ul.navBar_ul>li.active a.first_nav_name{background:#50c2d1;}
+/*ul.navBar_ul>li a.first_nav_name.active{background:#50c2d1;}*/
+ul.secNavBar_ul>li{line-height:50px;color:#fff;text-align: left;background:#333743;}
+ul.secNavBar_ul>li a.second_nav_name{color:#fff;display: block;padding-left:60px;}
+@media screen and (min-width: 750px){
+    ul.secNavBar_ul>li a.second_nav_name:hover{background-color:#383e4d;}
+}
+ul.secNavBar_ul>li a.second_nav_name.active{background:#50c2d1;}
+ul.navBar_ul>li ul.secNavBar_ul{display:none;}
+/*自定义菜单样式*/
+#page1 a.first_nav_name{background-image:url(../images/page-icon-1.png);background-repeat:no-repeat;background-position:20px center;}
+#page2 a.first_nav_name{background-image:url(../images/page-icon-2.png);background-repeat:no-repeat;background-position:20px center;}
+#page3 a.first_nav_name{background-image:url(../images/page-icon-3.png);background-repeat:no-repeat;background-position:20px center;}
+#page4 a.first_nav_name{background-image:url(../images/page-icon-4.png);background-repeat:no-repeat;background-position:20px center;}
+#page5 a.first_nav_name{background-image:url(../images/page-icon-5.png);background-repeat:no-repeat;background-position:20px center;}
+#page6 a.first_nav_name{background-image:url(../images/page-icon-6.png);background-repeat:no-repeat;background-position:20px center;}
+#page7 a.first_nav_name{background-image:url(../images/page-icon-7.png);background-repeat:no-repeat;background-position:20px center;}
+#page8 a.first_nav_name{background-image:url(../images/page-icon-8.png);background-repeat:no-repeat;background-position:20px center;}
